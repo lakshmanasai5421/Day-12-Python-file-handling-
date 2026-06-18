@@ -44,7 +44,7 @@ Opening a File
 In Python, files are opened using the built-in open() function:
 
 file = open("example.txt", "r")
-Syntax:
+Syntax
 open(filename, mode)
 filename: Name (or path) of the file
 mode: Specifies how the file will be used
