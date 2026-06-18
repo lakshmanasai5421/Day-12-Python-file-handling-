@@ -39,12 +39,15 @@ Unlike variables that store data temporarily in memory, files allow data to pers
 
 ## 1. Opening a File
 
-The `open()` function is the gateway to file handling. It takes a filename and a mode, and returns a **file object** you can work with. Think of it like opening a physical folder — you need to specify which folder (filename) and what you intend to do with it (mode: read, write, etc.).
+Opening a File
 
-```python
-f = open("filename.txt", mode)
-content = f.read()
-f.close()
+In Python, files are opened using the built-in open() function:
+
+file = open("example.txt", "r")
+Syntax:
+open(filename, mode)
+filename: Name (or path) of the file
+mode: Specifies how the file will be used
 ```
 
 You can also specify the **encoding** explicitly, which is important for files with special characters (accents, emojis, non-English text):
