@@ -61,11 +61,23 @@ open(filename, mode)
 
 ```
 ----
-You can also specify the **encoding** explicitly, which is important for files with special characters (accents, emojis, non-English text):
+## Encoding in File Handling
+
+You can also specify the **encoding** explicitly, which is important for files with special characters (accents, emojis, non-English text).
+
+### Example
 
 ```python
 f = open("filename.txt", "r", encoding="utf-8")
 f.close()
+```
+
+### Why Encoding Matters
+
+* Ensures correct reading of special characters
+* Prevents errors like `UnicodeDecodeError`
+* `utf-8` is the most commonly used encoding
+
 ```
 
 > **Why encoding matters:** Without specifying `encoding="utf-8"`, Python uses the system's default encoding, which can vary between Windows, Mac, and Linux — leading to `UnicodeDecodeError` on some machines.
