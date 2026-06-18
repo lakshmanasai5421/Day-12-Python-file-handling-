@@ -59,8 +59,7 @@ open(filename, mode)
 * **filename**: Name (or path) of the file
 * **mode**: Specifies how the file will be used
 
-```
-----
+
 ## Encoding in File Handling
 
 You can also specify the **encoding** explicitly, which is important for files with special characters (accents, emojis, non-English text).
