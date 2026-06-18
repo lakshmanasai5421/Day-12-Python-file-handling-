@@ -42,12 +42,23 @@ Unlike variables that store data temporarily in memory, files allow data to pers
 Opening a File
 
 In Python, files are opened using the built-in open() function:
+# Opening a File in Python
 
+In Python, files are opened using the built-in `open()` function:
+
+```python
 file = open("example.txt", "r")
-Syntax
+```
+
+## Syntax
+
+```python
 open(filename, mode)
-filename: Name (or path) of the file
-mode: Specifies how the file will be used
+```
+
+* **filename**: Name (or path) of the file
+* **mode**: Specifies how the file will be used
+
 ```
 
 You can also specify the **encoding** explicitly, which is important for files with special characters (accents, emojis, non-English text):
